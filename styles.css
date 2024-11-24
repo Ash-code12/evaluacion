@@ -22,6 +22,7 @@
   }
   
   header {
+    text-decoration: none;
     background-color: var(--white);
     color: var(--text-dark);
     position: sticky;
@@ -65,6 +66,7 @@
   }
   
   .nav__link {
+    text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
     color: var(--text-dark);
@@ -102,7 +104,7 @@
     bottom: -10%;
     left: 12%;
     z-index: 2;
-    padding-right: 30px 30px 30px;
+    padding-right: 30px 30px 30px 50px;
     
   }
   
@@ -155,7 +157,7 @@
     line-height: 1.6;
     color: var(--text-light);
     margin-bottom: 2rem;
-    max-width: 300px;
+    max-width: 300px    amaaaa;
   }
   
   .start {
@@ -200,3 +202,127 @@
     opacity: 0.15;
     z-index: 0;
   }
+
+  /* About */
+
+  #intro{
+    margin: 50px 0;
+  }
+
+  .first{
+    text-align: center;
+    padding: 150px;
+  }
+
+  #intro h1{
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .about{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .card__1{
+    background: #fff;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .card__1 h2{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #444;
+  }
+
+  .card__1 p{
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #666;
+  }
+
+  .card__1 a{
+    display: inline-block;
+    text-decoration: none;
+    color: #efe637;
+    background-color: #fff;
+    border: solid #efe637;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+
+  .card__1 a:hover{
+    background-color: #ffaa00;
+  }
+
+  .card__2{
+    background: #fff;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .card__2 h2{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #444;
+  }
+
+  .card__2 p{
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #666;
+  }
+
+  .card__2 a{
+    display: inline-block;
+    text-decoration: none;
+    color: #3c4eb9;
+    background-color: #fff;
+    border: solid #3c4eb9;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+
+  .card__3{
+    background: #fff;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .card__3 h2{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #444;
+  }
+
+  .card__3 p{
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #666;
+  }
+
+  .card__3 a{
+    display: inline-block;
+    text-decoration: none;
+    color: #e19f69;
+    background-color: #fff;
+    border: solid #e19f69;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+
