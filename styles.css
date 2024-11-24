@@ -1,64 +1,202 @@
-
-*{
+:root {
+    --primary-color: #dcd7f8;
+    --text-dark: #3f3b57;
+    --text-light: #908ca3;
+    --white: #ffffff;
+    --max-width: 1200px;
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root{
-    --color_primario: #c593f0;
-    --color_secundario: #f9c9a1;
-    --color_blanco:#e9e6e6;
-    --color_negro:#000000 ;
-    --tamaño_fuente: 10px;
-    --maximo_ancho: 600px;
-    --alto_nav: 70px;
-}
-
-html{
+  }
+  
+  html {
     scroll-behavior: smooth;
-}
-
-body{
-    font: size var(--tamaño_fuente);
-    background-color: #ffffff;
-    color: var(--color_blanco);
-}
-
-header{
-    background-color: var(--color_blanco);
-    color: var(--color_secundario);
-   position: sticky;
-   width: 100%;
-   top: 0;
-}
-a {
-    text-decoration: none; 
-    color: var(--color_negro); 
-}
-
-.contenedor{
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-dark);
+  }
+  
+  header {
+    background-color: var(--white);
+    color: var(--text-dark);
+    position: sticky;
+    top: 0;
     width: 100%;
-    max-width: var(--maximo_ancho);
+    z-index: 10;
+  }
+  
+  .contenedor {
+    max-width: var(--max-width);
     margin: 0 auto;
     overflow: hidden;
-}
-
-.h-100{
-    height: calc(100vh - var(--alto_nav));
-}
-
-.nav__contenedor{
+  }
+  
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.nav__lista{
-    height: calc(100vh var(--alto_nav));
+    padding: 20px 50px;
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pet__titulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-dark);
+  }
+  
+  .nav__lista {
     list-style: none;
     display: flex;
-    align-items: center;
-    gap: 2rem;
-}
+    justify-content: flex-end;
+    gap: 2.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav__item {
+    margin: 0;
+  }
+  
+  .nav__link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    transition: color 0.3s ease;
+  }
+  
+  .nav__link:hover {
+    color: var(--primary-color);
+  }
+  
+  #home {
+    position: relative;
+    padding: 5rem 0;
+    text-align: center;
+    background-color: var(--primary-color);
+  }
+  
+  .welcome {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: left;
+    padding: 10% 0% 0 35%;
+  }
 
+  .caja__welcome{
+   text-align: left;
+  }
+
+ 
+  .dog__img {
+    max-width: 450px;
+    height: auto;
+    position: absolute;
+    bottom: -10%;
+    left: 12%;
+    z-index: 2;
+    padding-right: 30px 30px 30px;
+    
+  }
+  
+  .welcome h3:first-of-type {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    background-color: rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+
+  }
+  
+  
+  .doctor {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    color: var(--text-dark);
+  }
+
+  .pet{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    color: var(--text-dark);
+  }
+
+  
+  .titulo__pequeño {
+    font-size: 2.5rem;
+  }
+  
+  .titulo__grande span {
+    font-size: 5rem;
+  }
+  
+  .welcome h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    
+  }
+  
+  p .welcome #home {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    max-width: 300px;
+  }
+  
+  .start {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 30px;
+    background-color: #a5a4a4;
+    color: var(--text-dark);
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .start:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+  }
+  
+  .start .flecha {
+    width: 20px;
+    height: 20px;
+    background-color: var(--text-light);
+    border-radius: 100%;
+    vertical-align: middle;
+  }
+  
+  .start:hover .flecha {
+    transform: translateX(5px);
+  }
+  
+  #home::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+    background-color: var(--primary-color);
+    background-image: url(img/image-removebg-preview.png);
+    background-size: cover;
+    opacity: 0.15;
+    z-index: 0;
+  }
